@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Insert title here</title>
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="js/dicegame.js"></script>
+<script src="js/welcome.js"></script>
+</head>
+<body onload="welcome2()">
+
+<!--  	<a href="newPlayer.html"><button>Enter new player</button></a> -->
+<p id="welcome"></p><button onclick="logout()">Log out</button>
+<h4>Player options:</h4>
+<p>
+	<a href="changePlayer.html"><button>Change your name</button></a>
+	<a href="newGame.html"><button>Start a new game</button></a>	
+	
+	<button onclick="seeIndividualAverage()">See your average</button>
+	<button onclick="seeGamesByPlayer()">See all your games</button>
+	<button onclick="deleteGames()">Delete all your games</button>
+	</p>
+	<h4>Global options:</h4>
+	<button onclick="seeAllPlayers()">See all players</button>
+<button onclick="seeAverage()">See global average</button>
+<button onclick="seeLoser()">See loser</button>
+<button onclick="seeWinner()">See winner</button>
+<br>
+
+	<p id="showList"></p>
+
+</body>
+</html>
